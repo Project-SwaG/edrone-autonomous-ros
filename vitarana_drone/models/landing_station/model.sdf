@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <model name="landing_station">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://landing_station/meshes/marker.obj</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>

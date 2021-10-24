@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://sector</uri>
+      <static>true</static>
+    </include>
+    <include>
+      <uri>model://edrone</uri>
+      <pose>102.375977 17.700167 21.849997 0 0 0</pose>
+      <static>1</static>
+    </include>
+    <include>
+      <uri>model://landing_station</uri>
+      <pose>0 0 8.11 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://parcel_box</uri>
+      <pose>78 11 22 0 0 0</pose>
+    </include>
+    <gui>
+      <camera name="user_camera">
+        <pose>109.500000 18 27 0 0.6 3.14</pose>
+      </camera>
+    </gui> 
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+  </world>
+</sdf>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://edrone</uri>
+      <pose>3 0 0 0 0 0</pose>
+      <static>1</static>
+    </include>
+    <include>
+      <uri>model://parcel_box</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+  </world>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<arg name="static" default=""/>
+        <include 
+            file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name"  value="$(find vitarana_drone)/worlds/sector_task_3$(arg static).world"/>
+        </include>
+
+
+        <arg name="record" default="false"/>
+        <arg name="duration" default="280"/>
+        <arg name="rec_name" default="Task_3_VD.bag"/>
+
+
+        <group if="$(arg record)">
+            <node name="throttler_model_states" type="throttle" pkg="topic_tools" args="messages /gazebo/model_states 10"/>
+            
+            <node name="rosbag_record_position" pkg="rosbag" type="record"
+               args="record -O $(find vitarana_drone)/bag_files/$(arg rec_name) --duration=$(arg duration) /gazebo/model_states_throttle /edrone/marker_data" output="screen"/>
+
+        </group>
+
+
+        <node name="throttler_model_states" type="throttle" pkg="topic_tools" args="messages /gazebo/model_states 10"/>
+        
+        <node name="gripper_service" type="gripper_service.py" pkg="vitarana_drone"/>
+
+       	<node pkg="vitarana_drone" type="attitude_controller.py" name="attitude_controller" output="screen"/>
+
+       	<node pkg="vitarana_drone" type="qr_detect.py" name="qr_scanner" output="screen"/>
+
+        <node pkg="vitarana_drone" type="detect_marker_cascade.py" name="marker_detect" output="screen"/>
+
+    		<node pkg="vitarana_drone" type="position_controller3.py" name="position_controller3" output="screen"/>
+
+
+</launch>

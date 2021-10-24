@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<arg name="static" default=""/>
+        <include 
+            file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name"  value="$(find vitarana_drone)/worlds/drone$(arg static).world"/>
+        </include>
+</launch>
