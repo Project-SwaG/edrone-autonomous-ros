@@ -71,7 +71,7 @@ The aim of this task is to pick a parcel and deliver it to its destination by:
 
 <img src="/screenshots/task2obs.png" width="900" height="500">  
 
-#### [Task 2 Video]()
+#### [Task 2 Video](https://www.youtube.com/watch?v=ow7JdfzKjZU)
 
 ### Task 3
 The aim of this task is to refine our navigation and path planning algorithm so as to increase the functionality of the drone for doing more tasks such as delivery of multiple sets of packages to multiple destinations.
@@ -106,6 +106,6 @@ The aim of this task is to complete a set of deliveries and returns from warehou
 <img src="/screenshots/task6flight.png" width="900" height="500">  
 
 
-#### [Task 6 Video]()
+#### [Task 6 Video](https://www.youtube.com/watch?v=KohW11D1_Yc)
 
 
