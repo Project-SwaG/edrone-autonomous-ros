@@ -3,7 +3,6 @@
 Members
 - Pradumn Mishra ([pradumn203](https://github.com/pradumn203))
 - Abhisek Omkar Prasad ([AbhisekOmkar](https://github.com/AbhisekOmkar))
-- Urja Jain ([Urja Jain](https://github.com/Urja-Jain))
 - Pallabika Bora ([Pallabika Bora](https://www.linkedin.com/in/pallabika-bora-a735391b6/))
 
 ## INTRODUCTION
