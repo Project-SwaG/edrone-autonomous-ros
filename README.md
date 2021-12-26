@@ -1,5 +1,5 @@
 
-# Team: Swayamchalit Gaadi
+# Team: Swayamchalit Gaadi Project SwaG
 Members
 - Pradumn Mishra ([pradumn203](https://github.com/pradumn203))
 - Abhisek Omkar Prasad ([AbhisekOmkar](https://github.com/AbhisekOmkar))
